@@ -18,10 +18,22 @@
       <div class="form__container">
         <form class="form__admin">
           <div class="form__main-container">
-            <fieldset class="form__input-container form__input-container_ctrl_texts"></fieldset>
+            <h2 class="form__heading">Задайте параметры</h2>
+            <fieldset class="form__input-container form__input-container_ctrl_texts">
+              <input type="text" class="form__item form__item_el_heading">
+              <input type="text" class="form__item form__item_el_subheading">
+              <input type="email" class="form__item form__item_el_email">
+            </fieldset>
             <div class="form__line"></div>
-            <fieldset class="form__input-container form__input-container_ctrl_visual"></fieldset>
-            <fieldset class="form__input-container form__input-container_ctrl_additional"></fieldset>
+            <fieldset class="form__input-container form__input-container_ctrl_visual">
+              <input type="number" class="form__item form__item_el_heading-fontsize">
+              <input type="number" class="form__item form__item_el_text-fontsize">
+              <input type="date" class="form__item form__item_el_pubdate">
+            </fieldset>
+            <fieldset class="form__input-container form__input-container_ctrl_additional">
+              <input type="color" class="form__item form__item_el_text-color">
+              <input type="ranges" class="form__item form__item_el_content-width">
+            </fieldset>
           </div>
           <fieldset class="form__handlers"></fieldset>
         </form>
