@@ -22,13 +22,13 @@
             <fieldset class="form__input-container form__input-container_ctrl_texts">
               <label for="heading" class="form__label">Заголовок</label>
               <input type="text" class="form__item form__item_el_heading" id="heading" name="heading"
-                placeholder="О чём статья?">
+                placeholder="О чём статья?" required>
               <label for="subheading" class="form__label">Подзаголовок</label>
               <input type="text" class="form__item form__item_el_subheading" id="subheading" name="subheading"
-                placeholder="Краткое описание">
+                placeholder="Краткое описание" required>
               <label for="main-text" class="form__label">Текст статьи</label>
               <textarea class="form__item form__item_el_main-text" id="main-text" name="main-text"
-                placeholder="Здесь будет основной текст вашей статьи"></textarea>
+                placeholder="Здесь будет основной текст вашей статьи" required></textarea>
               <label for="email" class="form__label">E-mail</label>
               <input type="email" class="form__item form__item_el_email" id="email" name="email"
                 placeholder="hello@example.com">
@@ -59,12 +59,18 @@
             </fieldset>
             <fieldset class="form__input-container form__input-container_ctrl_additional">
               <h3 class="form__heading form__heading_type_ctrl-el-heading">Количество колонок</h3>
-              <input type="radio" name="number-of-columns" id="one-column"
-                class="form__item form__item_el_number-of-columns" value="one-column" checked>
-              <label class="form__label form__label_direction_right" for="one-column">1</label>
-              <input type="radio" name="number-of-columns" id="two-columns"
-                class="form__item form__item_el_number-of-columns" value="two-columns">
-              <label class="form__label form__label_direction_right" for="two-columns">2</label>
+              <label class="form__label form__label_direction_right" for="one-column">
+                <input type="radio" name="number-of-columns" id="one-column"
+                  class="form__item form__item_el_number-of-columns" value="one-column" checked>
+                <span class="form__pseudo-item form__pseudo-item_type_radio"></span>
+                <span class="form__label-text">1</span>
+              </label>
+              <label class="form__label form__label_direction_right" for="two-columns">
+                <input type="radio" name="number-of-columns" id="two-columns"
+                  class="form__item form__item_el_number-of-columns" value="two-columns">
+                <span class="form__pseudo-item form__pseudo-item_type_radio"></span>
+                <span class="form__label-text">2</span>
+              </label>
               <label for="text-color" class="form__label">Цвет текста</label>
               <input type="color" class="form__item form__item_el_text-color" id="text-color" name="text-color"
                 value="#979797">
@@ -72,12 +78,18 @@
               <input type="ranges" class="form__item form__item_el_content-width" min="30" max="80" step="10"
                 id="content-width" name="content-width">
               <h3 class="form__heading form__heading_type_ctrl-el-heading">Дополнительные параметры</h3>
-              <input type="checkbox" name="extra-option" id="black-background"
-                class="form__item form__item_el_extra-options" value="black-background">
-              <label class="form__label form__label_direction_right" for="black-background">Чёрный фон</label>
-              <input type="checkbox" name="extra-option" id="bold-heading"
-                class="form__item form__item_el_extra-options" value="bold-heading" checked>
-              <label class="form__label form__label_direction_right" for="bold-heading">Жирный заголовок</label>
+              <label class="form__label form__label_direction_right" for="black-background">
+                <input type="checkbox" name="extra-option" id="black-background"
+                  class="form__item form__item_el_extra-options" value="black-background">
+                <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
+                <span class="form__label-text">Чёрный фон</span>
+              </label>
+              <label class="form__label form__label_direction_right" for="bold-heading">
+                <input type="checkbox" name="extra-option" id="bold-heading"
+                  class="form__item form__item_el_extra-options" value="bold-heading" checked>
+                <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
+                <span class="form__label-text">Жирный заголовок</span>
+              </label>
             </fieldset>
           </div>
           <fieldset class="form__handlers">
