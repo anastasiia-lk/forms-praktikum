@@ -202,6 +202,33 @@
 }
 
 /* Стилизуем плейсхолдеры */
+.form__item::placeholder {
+  font-size: 14px;
+  font-family: 'Alegreya Sans';
+  line-height: 20px;
+  color: #bcbcc4;
+}
+
+.form__item::-webkit-input-placeholder {
+  font-size: 14px;
+  font-family: 'Alegreya Sans';
+  line-height: 20px;
+  color: #bcbcc4;
+}
+
+.form__item::-moz-placeholder {
+  font-size: 14px;
+  font-family: 'Alegreya Sans';
+  line-height: 20px;
+  color: #bcbcc4;
+}
+
+.form__item::-ms-input-placeholder {
+  font-size: 14px;
+  font-family: 'Alegreya Sans';
+  line-height: 20px;
+  color: #bcbcc4;
+}
 
 /* Поля ввода */
 
